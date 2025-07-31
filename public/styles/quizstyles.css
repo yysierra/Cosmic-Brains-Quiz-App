@@ -1,0 +1,64 @@
+/* button styles */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+/* ripple effect */
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(0);
+    animation: ripple-animation 0.6s linear;
+    pointer-events: none;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* answer button states */
+.answer-btn.selected {
+    background: linear-gradient(45deg, #00f5ff, #0099ff) !important;
+    border-color: #00f5ff !important;
+    color: white !important;
+}
+
+.answer-btn.correct {
+    background: linear-gradient(45deg, #4caf50, #8bc34a) !important;
+    border-color: #4caf50 !important;
+    color: white !important;
+}
+
+.answer-btn.incorrect {
+    background: linear-gradient(45deg, #f44336, #ff5722) !important;
+    border-color: #f44336 !important;
+    color: white !important;
+}
+
+/* review items */
+.review-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid;
+}
+
+.review-item.correct {
+    background: rgba(40, 167, 69, 0.1);
+    border-color: #28a745;
+}
+
+.review-item.incorrect {
+    background: rgba(220, 53, 69, 0.1);
+    border-color: #dc3545;
+}
+
+.review-question {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
