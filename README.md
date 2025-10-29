@@ -68,11 +68,11 @@ Kevin's contributions involve the frontend page structure and visual design impl
 
 ### Page Structure:
 
-- **`<div id="home-page" class="page active">`**: The home page where players can start the quiz.
+- **`Home-Page`**: The home page where players can start the quiz.
     
-- **`<div id="quiz-page" class="page">`**: The quiz page where the 10 questions will be asked sequentially.
+- **`Quiz-Page`**: The quiz page where the 10 questions will be asked sequentially.
     
-- **`<div id="results-page" class="page">`**: The results page where the final score is displayed.
+- **`Results-Page`**: The results page where the final score is displayed.
     
 
 ---
